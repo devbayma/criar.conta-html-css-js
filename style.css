@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#titulo {
+  font-family: sans-serif;
+  color: black;
+  margin-left: 7%;
+}
+
+#subtitulo {
+  font-family: sans-serif;
+  color: black;
+  margin-left: 10%;
+}
+
+fieldset {
+  border: 0;
+}
+
+body {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: yellow;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: darkgrey;
+  margin-left: 36%;
+  margin-right: 36%;
+  margin-top: 5%;
+  justify-content: center;
+}
+
+body {
+  background-image: url("./imagem/fundo02.jpg");
+  background-size: cover;
+}
+
+input,
+select,
+textarea,
+button {
+  border-radius: 5px;
+}
+
+.campo {
+  margin-bottom: 1em;
+}
+
+.campo label {
+  margin-top: 0.2em;
+  color: rgb(15, 17, 15);
+  display: block;
+}
+
+fieldset .grupo .campo {
+  float: left;
+  margin-right: 1em;
+}
+
+.campo input [type="text"],
+.campo input[type="email"],
+.campo select,
+.campo textarea {
+  padding: 1px;
+  border: 1px solid #59429d;
+  box-shadow: 2px 2px 2px #59429d;
+  display: block;
+}
+
+.campo select option {
+  padding-right: 1em;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  background-color: rgb(241, 232, 232);
+}
+
+.botao {
+  font-size: 1.2em;
+  background-color: rgb(202, 199, 19);
+  border: 0;
+  margin-bottom: 1em;
+  color: ivory;
+  padding: 0.2em 0.6em;
+  box-shadow: 2px 2px 2px #999;
+  text-shadow: 1px 1px 1px #3f3;
+  position: unset;
+  margin-right: -50%;
+  transform: (-50%, -50%);
+  cursor: pointer;
+}
+
+.botao:hover {
+  background: blue;
+  /* box-shadow: inset 2px black; */
+  text-shadow: none;
+}
+
+.botao span {
+  position: relative;
+  transition: 0.5s;
+}
+
+.botao span:after {
+  content: "\2714";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.botao:hover span {
+  padding-right: 25px;
+}
+
+.botao:hover span:after {
+  opacity: 1;
+  right: 0;
+}
